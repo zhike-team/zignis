@@ -3,22 +3,52 @@
 ## invokeHook
 
 Run hook in all valid plugins and return the combined results.
+Plugins implement hook in `module.exports`, could be generator function or promise function
 
 ### Parameters
 
--   `hook` **[string][1]** 
+-   `hook` **[string][1]** Hook name, suggest plugin defined hook include a prefix, e.g. `zhike:hook`
+-   `mode` **[string][1]** Hook mode, could be `assign`, `merge`, `push`, `replace`. (optional, default `'assign'`)
+
+### Examples
+
+```javascript
+const hookReturn = yield Utils.invokeHook('hook')
+```
 
 ## extendSubCommand
 
-Extend Sub Command, make it can be extended by other plugins.
-Often set basePath to `__dirname`.
+Extend command's sub command, it give other plugins an opportunity to extend it's sub command.
+So if you want other plugins to extend your sub commands, you can use this util function to replace default `yargs.commandDir`
 
 ### Parameters
 
--   `command` **[String][1]** 
--   `module` **[String][1]** 
--   `yargs` **[Object][2]** 
--   `basePath` **[String][1]** 
+-   `command` **[String][1]** Current command name.
+-   `module` **[String][1]** Current plugin name.
+-   `yargs` **[Object][2]** Yargs reference.
+-   `basePath` **[String][1]** Often set to `__dirname`.
+
+### Examples
+
+```javascript
+exports.builder = function (yargs) {
+  Utils.extendSubCommand('make', 'zignis', yargs, __dirname)
+}
+```
+
+## getAllPluginsMapping
+
+Get all plugins path mapping.
+Same name plugins would be overriden orderly.
+This function also influence final valid commands and configs.
+
+## getApplicationConfig
+
+Get application zignis config only.
+
+## getCombinedConfig
+
+Get commbined config from whole environment.
 
 ## log
 
@@ -26,8 +56,8 @@ Print message with format and color.
 
 ### Parameters
 
--   `message` **mix** message to log
--   `label` **[string][1]** label for describing message (optional, default `''`)
+-   `message` **mix** Message to log
+-   `label` **[string][1]** Label for describing message (optional, default `''`)
 
 ## error
 
@@ -35,9 +65,9 @@ Print error message, and exit process.
 
 ### Parameters
 
--   `message` **mix** error message to log
--   `label` **[string][1]** error log label (optional, default `''`)
--   `errorCode` **integer** error code (optional, default `1`)
+-   `message` **mix** Error message to log
+-   `label` **[string][1]** Error log label (optional, default `''`)
+-   `errorCode` **integer** Error code (optional, default `1`)
 
 ## warn
 
@@ -45,8 +75,8 @@ Print warn message with yellow color.
 
 ### Parameters
 
--   `message` **mix** error message to log
--   `label` **[string][1]** error log label (optional, default `''`)
+-   `message` **mix** Error message to log
+-   `label` **[string][1]** Error log label (optional, default `''`)
 
 ## md5
 
@@ -64,6 +94,8 @@ Delay a while.
 
 -   `ms` **integer** 
 
+Returns **[Promise][3]** 
+
 ## splitComma
 
 Split input by comma and blank.
@@ -72,30 +104,24 @@ Split input by comma and blank.
 
 -   `input` **[string][1]** 
 
-Returns **[array][3]** input separated by comma
+### Examples
 
-## getAllPluginsMapping
+```javascript
+const = Utils.splitComma('a, b , c,d')
+```
 
-Get all plugins path mapping.
-Same name plugin would be overriden orderly
-
-## getApplicationConfig
-
-Get application zignis config only.
-
-## getCombinedConfig
-
-Get commbined config from whole environment.
+Returns **[array][4]** input separated by comma
 
 ## outputTable
 
 Print a simple table.
+A table style for `zignis status`, if you don't like this style, can use Utils.table
 
 ### Parameters
 
--   `columns` **any** table columns
--   `caption`  
--   `borderOptions`   (optional, default `{}`)
+-   `columns` **[array][4]** Table columns
+-   `caption` **[string][1]** Table caption
+-   `borderOptions` **[object][2]** Border options (optional, default `{}`)
 
 ## random
 
@@ -112,70 +138,72 @@ Zignis utils functions and references to common modules.
 
 ### \_
 
-[lodash][4] reference, check [doc][5].
+[lodash][5] reference, check [doc][6].
 
 ### chalk
 
-[chalk][6] reference
+[chalk][7] reference
 
 ### table
 
-[table][7] reference
+[table][8] reference
 
 ### day
 
-[day.js][8] reference, check [api][9] documentation.
+[day.js][9] reference, check [api][10] documentation.
 
 ### colorize
 
-[json-colorizer][10] reference
+[json-colorizer][11] reference
 
 ### stringify
 
-[json-stringify-pretty-compact][11] reference.
+[json-stringify-pretty-compact][12] reference.
 
 ### glob
 
-[glob][12] reference.
+[glob][13] reference.
 
 ### findUp
 
-[find-up][13] reference.
+[find-up][14] reference.
 
 ### co
 
-[co][14] reference.
+[co][15] reference.
 
 ### shell
 
-[shelljs][15] reference.
+[shelljs][16] reference.
 
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
 [2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
 
-[3]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[3]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
-[4]: https://www.npmjs.com/package/lodash
+[4]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
 
-[5]: https://lodash.com/docs
+[5]: https://www.npmjs.com/package/lodash
 
-[6]: https://www.npmjs.com/package/chalk
+[6]: https://lodash.com/docs
 
-[7]: https://www.npmjs.com/package/table
+[7]: https://www.npmjs.com/package/chalk
 
-[8]: https://www.npmjs.com/package/dayjs
+[8]: https://www.npmjs.com/package/table
 
-[9]: https://github.com/iamkun/dayjs/blob/HEAD/docs/en/API-reference.md
+[9]: https://www.npmjs.com/package/dayjs
 
-[10]: https://www.npmjs.com/package/json-colorizer
+[10]: https://github.com/iamkun/dayjs/blob/HEAD/docs/en/API-reference.md
 
-[11]: https://www.npmjs.com/package/json-stringify-pretty-compact
+[11]: https://www.npmjs.com/package/json-colorizer
 
-[12]: https://www.npmjs.com/package/glob
+[12]: https://www.npmjs.com/package/json-stringify-pretty-compact
 
-[13]: https://www.npmjs.com/package/find-up
+[13]: https://www.npmjs.com/package/glob
 
-[14]: https://www.npmjs.com/package/co
+[14]: https://www.npmjs.com/package/find-up
 
-[15]: https://www.npmjs.com/package/shelljs
+[15]: https://www.npmjs.com/package/co
+
+[16]: https://www.npmjs.com/package/shelljs
