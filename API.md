@@ -132,6 +132,16 @@ Get a random number in a range.
 -   `min` **integer** 
 -   `max` **integer** 
 
+## parsePackageNames
+
+Parse packages from yargs option
+
+### Parameters
+
+-   `input` **any** yarns option input, could be string or array
+
+Returns **[array][4]** Package list
+
 ## Utils
 
 Zignis utils functions and references to common modules.
