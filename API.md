@@ -33,6 +33,7 @@ So if you want other plugins to extend your sub commands, you can use this util 
 
 ```javascript
 exports.builder = function (yargs) {
+  // The first param could be a/b/c if you want to extend subcommand's subcommand
   Utils.extendSubCommand('make', 'zignis', yargs, __dirname)
 }
 ```
