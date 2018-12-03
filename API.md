@@ -142,6 +142,15 @@ Parse packages from yargs option
 
 Returns **[array][4]** Package list
 
+## loadPackageInfo
+
+Load any package's package.json
+
+### Parameters
+
+-   `pkg` **[string][1]** package name
+-   `paths` **[array][4]** search paths
+
 ## Utils
 
 Zignis utils functions and references to common modules.
