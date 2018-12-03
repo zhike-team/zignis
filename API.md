@@ -3,12 +3,13 @@
 ## invokeHook
 
 Run hook in all valid plugins and return the combined results.
-Plugins implement hook in `module.exports`, could be generator function or promise function
+Plugins implement hook in `module.exports`, could be generator function or promise function or non-function
+For non-function, it will be used as hook data directly, likely to be returned by function
 
 ### Parameters
 
 -   `hook` **[string][1]** Hook name, suggest plugin defined hook include a prefix, e.g. `zhike:hook`
--   `mode` **[string][1]** Hook mode, could be `assign`, `merge`, `push`, `replace`. (optional, default `'assign'`)
+-   `mode` **[string][1]** Hook mode, could be `assign`, `merge`, `push`, `replace`, `group`, default is assign. (optional, default `'assign'`)
 
 ### Examples
 
