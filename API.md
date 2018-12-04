@@ -153,6 +153,15 @@ Load any package's package.json
 -   `pkg` **[string][1]** package name
 -   `paths` **[array][4]** search paths
 
+## exec
+
+Execute command, because npm install running info can not be catched by shelljs, temporarily use this one
+
+### Parameters
+
+-   `command` **[string][1]** Command to exec
+-   `options` **[object][2]** Options stdio default is [0, 1, 2] (optional, default `{}`)
+
 ## Utils
 
 Zignis utils functions and references to common modules.
