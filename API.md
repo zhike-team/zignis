@@ -59,7 +59,6 @@ Print message with format and color.
 ### Parameters
 
 -   `message` **mix** Message to log
--   `label` **[string][1]** Label for describing message
 
 ## error
 
@@ -78,7 +77,14 @@ Print warn message with yellow color.
 ### Parameters
 
 -   `message` **mix** Error message to log
--   `label` **[string][1]** Error log label
+
+## info
+
+Print info message with green color.
+
+### Parameters
+
+-   `message` **mix** Error message to log
 
 ## md5
 
