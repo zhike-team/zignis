@@ -212,6 +212,10 @@ Zignis utils functions and references to common modules.
 
 [shelljs][16] reference.
 
+### debug
+
+[shelljs][17] reference.
+
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
 [2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
@@ -243,3 +247,5 @@ Zignis utils functions and references to common modules.
 [15]: https://www.npmjs.com/package/co
 
 [16]: https://www.npmjs.com/package/shelljs
+
+[17]: https://www.npmjs.com/package/debug
