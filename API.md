@@ -218,7 +218,15 @@ Zignis utils functions and references to common modules.
 
 ### debug
 
-[shelljs][17] reference.
+[debug][17] reference.
+
+### fuzzy
+
+[fuzzy][18] reference.
+
+### inquirer
+
+[inquirer][19] reference, with autocomplete plugin
 
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
@@ -253,3 +261,7 @@ Zignis utils functions and references to common modules.
 [16]: https://www.npmjs.com/package/shelljs
 
 [17]: https://www.npmjs.com/package/debug
+
+[18]: https://www.npmjs.com/package/fuzzy
+
+[19]: https://www.npmjs.com/package/inquirer
