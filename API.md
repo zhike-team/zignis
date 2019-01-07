@@ -228,6 +228,10 @@ Zignis utils functions and references to common modules.
 
 [inquirer][19] reference, with autocomplete plugin
 
+### fs
+
+[inquirer][20] reference
+
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
 [2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
@@ -265,3 +269,5 @@ Zignis utils functions and references to common modules.
 [18]: https://www.npmjs.com/package/fuzzy
 
 [19]: https://www.npmjs.com/package/inquirer
+
+[20]: https://www.npmjs.com/package/fs
