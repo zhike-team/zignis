@@ -14,6 +14,7 @@ For non-function, it will be used as hook data directly, likely to be returned b
     -   `options.useCache` **bool** If or not use cached hook result
     -   `options.include` **[array][2]** set plugins to be used in invoking
     -   `options.exclude` **[array][2]** set plugins not to be used in invoking, same ones options.exclude take precedence
+    -   `options.opts` **[array][2]** opts will be sent to hook implementation
 
 ### Examples
 
