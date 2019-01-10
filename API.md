@@ -135,15 +135,6 @@ A table style for `zignis status`, if you don't like this style, can use Utils.t
 -   `caption` **[string][1]** Table caption
 -   `borderOptions` **[object][3]** Border options (optional, default `{}`)
 
-## random
-
-Get a random number in a range.
-
-### Parameters
-
--   `min` **integer** 
--   `max` **integer** 
-
 ## parsePackageNames
 
 Parse packages from yargs option
@@ -171,6 +162,14 @@ Execute command, because npm install running info can not be catched by shelljs,
 
 -   `command` **[string][1]** Command to exec
 -   `options` **[object][3]** Options stdio default is [0, 1, 2] (optional, default `{}`)
+
+## sleep
+
+Sleep a while of ms
+
+### Parameters
+
+-   `ms` **integer** 
 
 ## Utils
 
@@ -232,6 +231,10 @@ Zignis utils functions and references to common modules.
 
 [inquirer][20] reference
 
+### randomatic
+
+[inquirer][21] reference
+
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
 [2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
@@ -270,4 +273,6 @@ Zignis utils functions and references to common modules.
 
 [19]: https://www.npmjs.com/package/inquirer
 
-[20]: https://www.npmjs.com/package/fs
+[20]: https://www.npmjs.com/package/fs-extra
+
+[21]: https://www.npmjs.com/package/randomatic
