@@ -72,6 +72,7 @@ Print error message, and exit process.
 ### Parameters
 
 -   `message` **mix** Error message to log
+-   `exit`   (optional, default `true`)
 -   `errorCode` **integer** Error code (optional, default `1`)
 -   `label` **[string][1]** Error log label
 
@@ -82,6 +83,8 @@ Print warn message with yellow color.
 ### Parameters
 
 -   `message` **mix** Error message to log
+-   `exit`   (optional, default `false`)
+-   `errorCode`   (optional, default `0`)
 
 ## info
 
@@ -90,6 +93,8 @@ Print info message with green color.
 ### Parameters
 
 -   `message` **mix** Error message to log
+-   `exit`   (optional, default `false`)
+-   `errorCode`   (optional, default `0`)
 
 ## md5
 
