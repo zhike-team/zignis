@@ -96,6 +96,16 @@ Print info message with green color.
 -   `exit`   (optional, default `false`)
 -   `errorCode`   (optional, default `0`)
 
+## success
+
+Print success message with green color.
+
+### Parameters
+
+-   `message` **mix** Error message to log
+-   `exit`   (optional, default `false`)
+-   `errorCode`   (optional, default `0`)
+
 ## md5
 
 Compute md5.
@@ -235,11 +245,15 @@ Zignis utils functions and references to common modules.
 
 ### fs
 
-[inquirer][20] reference
+[fs-extra][20] reference
 
 ### randomatic
 
-[inquirer][21] reference
+[randomatic][21] reference
+
+### emoji
+
+[node-emoji][22] reference
 
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
@@ -282,3 +296,5 @@ Zignis utils functions and references to common modules.
 [20]: https://www.npmjs.com/package/fs-extra
 
 [21]: https://www.npmjs.com/package/randomatic
+
+[22]: https://www.npmjs.com/package/node-emoji
