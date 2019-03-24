@@ -53,6 +53,10 @@ This function also influence final valid commands and configs.
 
 Get application zignis config only.
 
+### Parameters
+
+-   `cwd`  
+
 ## getCombinedConfig
 
 Get commbined config from whole environment.
