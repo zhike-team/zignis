@@ -118,16 +118,6 @@ Compute md5.
 
 -   `s` **[string][1]** 
 
-## delay
-
-Delay a while.
-
-### Parameters
-
--   `ms` **integer** 
-
-Returns **[Promise][4]** 
-
 ## splitComma
 
 Split input by comma and blank.
@@ -197,67 +187,67 @@ Zignis utils functions and references to common modules.
 
 ### \_
 
-[lodash][5] reference, check [doc][6].
+[lodash][4] reference, check [doc][5].
 
 ### chalk
 
-[chalk][7] reference
+[chalk][6] reference
 
 ### table
 
-[table][8] reference
+[table][7] reference
 
 ### day
 
-[day.js][9] reference, check [api][10] documentation.
+[day.js][8] reference, check [api][9] documentation.
 
 ### colorize
 
-[json-colorizer][11] reference
+[json-colorizer][10] reference
 
 ### stringify
 
-[json-stringify-pretty-compact][12] reference.
+[json-stringify-pretty-compact][11] reference.
 
 ### glob
 
-[glob][13] reference.
+[glob][12] reference.
 
 ### findUp
 
-[find-up][14] reference.
+[find-up][13] reference.
 
 ### co
 
-[co][15] reference.
+[co][14] reference.
 
 ### shell
 
-[shelljs][16] reference.
+[shelljs][15] reference.
 
 ### debug
 
-[debug][17] reference.
+[debug][16] reference.
 
 ### fuzzy
 
-[fuzzy][18] reference.
+[fuzzy][17] reference.
 
 ### inquirer
 
-[inquirer][19] reference, with autocomplete plugin
+[inquirer][18] reference, with autocomplete plugin
 
 ### fs
 
-[fs-extra][20] reference
+[fs-extra][19] reference
 
 ### randomatic
 
-[randomatic][21] reference
+[randomatic][20] reference
 
 ### emoji
 
-[node-emoji][22] reference
+[node-emoji][21] reference
 
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
@@ -265,40 +255,38 @@ Zignis utils functions and references to common modules.
 
 [3]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
 
-[4]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise
+[4]: https://www.npmjs.com/package/lodash
 
-[5]: https://www.npmjs.com/package/lodash
+[5]: https://lodash.com/docs
 
-[6]: https://lodash.com/docs
+[6]: https://www.npmjs.com/package/chalk
 
-[7]: https://www.npmjs.com/package/chalk
+[7]: https://www.npmjs.com/package/table
 
-[8]: https://www.npmjs.com/package/table
+[8]: https://www.npmjs.com/package/dayjs
 
-[9]: https://www.npmjs.com/package/dayjs
+[9]: https://github.com/iamkun/dayjs/blob/HEAD/docs/en/API-reference.md
 
-[10]: https://github.com/iamkun/dayjs/blob/HEAD/docs/en/API-reference.md
+[10]: https://www.npmjs.com/package/json-colorizer
 
-[11]: https://www.npmjs.com/package/json-colorizer
+[11]: https://www.npmjs.com/package/json-stringify-pretty-compact
 
-[12]: https://www.npmjs.com/package/json-stringify-pretty-compact
+[12]: https://www.npmjs.com/package/glob
 
-[13]: https://www.npmjs.com/package/glob
+[13]: https://www.npmjs.com/package/find-up
 
-[14]: https://www.npmjs.com/package/find-up
+[14]: https://www.npmjs.com/package/co
 
-[15]: https://www.npmjs.com/package/co
+[15]: https://www.npmjs.com/package/shelljs
 
-[16]: https://www.npmjs.com/package/shelljs
+[16]: https://www.npmjs.com/package/debug
 
-[17]: https://www.npmjs.com/package/debug
+[17]: https://www.npmjs.com/package/fuzzy
 
-[18]: https://www.npmjs.com/package/fuzzy
+[18]: https://www.npmjs.com/package/inquirer
 
-[19]: https://www.npmjs.com/package/inquirer
+[19]: https://www.npmjs.com/package/fs-extra
 
-[20]: https://www.npmjs.com/package/fs-extra
+[20]: https://www.npmjs.com/package/randomatic
 
-[21]: https://www.npmjs.com/package/randomatic
-
-[22]: https://www.npmjs.com/package/node-emoji
+[21]: https://www.npmjs.com/package/node-emoji
