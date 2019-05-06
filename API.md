@@ -142,7 +142,6 @@ Split input by a specific char and blank.
 
 -   `input` **[string][1]** 
 -   `char`  
--   `flags`   (optional, default `''`)
 
 ### Examples
 
