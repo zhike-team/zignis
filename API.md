@@ -134,6 +134,24 @@ const = Utils.splitComma('a, b , c,d')
 
 Returns **[array][2]** input separated by comma
 
+## splitByChar
+
+Split input by a specific char and blank.
+
+### Parameters
+
+-   `input` **[string][1]** 
+-   `char`  
+-   `flags`   (optional, default `''`)
+
+### Examples
+
+```javascript
+const = Utils.splitByChar('a, b , c=d', '=')
+```
+
+Returns **[array][2]** input separated by comma
+
 ## outputTable
 
 Print a simple table.
