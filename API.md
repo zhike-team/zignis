@@ -266,6 +266,10 @@ Zignis utils functions and references to common modules.
 
 [node-emoji][21] reference
 
+### getStdin
+
+[get-stdin][22] reference
+
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
 [2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
@@ -307,3 +311,5 @@ Zignis utils functions and references to common modules.
 [20]: https://www.npmjs.com/package/randomatic
 
 [21]: https://www.npmjs.com/package/node-emoji
+
+[22]: https://www.npmjs.com/package/get-stdin
